@@ -109,16 +109,6 @@ app.post("/", async (req, res) => {
 });
 
 
-
-
-
-
-
-
-
-
-
-
 app.post("/delete", async (req, res) => { //< Note the use of async and arrow function
   try { //< Use a try/catch block for cleaner error handling
     const checkedItemId = req.body.checkbox;
@@ -136,8 +126,6 @@ app.post("/delete", async (req, res) => { //< Note the use of async and arrow fu
       if (foundList)
         res.redirect("/" + listName);
 
-
-
     };
 
   }
@@ -147,7 +135,6 @@ app.post("/delete", async (req, res) => { //< Note the use of async and arrow fu
   }
 
 });
-
 
 
 app.get("/about", function (req, res) {
